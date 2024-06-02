@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 100px;    
+}
+.imgContainer{
+    height: 400px;
+    flex:1;
+    position: relative;
+}
+.formContainer{
+    flex:1;
+}
+.img{
+    object-fit: contain;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form input,
+.form textarea {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--btn);
+  background-color: var(--bgSoft);
+  color: var(--text);
+}
+
+.form button{
+    padding: 10px 100px;
+    background-color: var(--btn);
+    color: var(--text);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,19 @@
+.container{
+    display: flex;;
+    flex-wrap:wrap;
+    justify-content: start;
+}
+.post{
+    width: 30.3%;
+}
+
+@media screen and  (max-width:1080px){
+    .post{
+        width: 45%;
+    }
+}
+@media screen and  (max-width:768px){
+    .post{
+        width: 100%;
+    }
+}

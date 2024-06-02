@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+.container h2{
+    font-size: 20px;
+    color: var(--btn);
+}
+.container h1{
+    font-size: 40px;
+}
+.container p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box h1{
+    font-size: 30px;
+    color: var(--btn);
+}
+.box p{
+    font-size: 10px;
+}
+.textContainer {
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.imgContainer{
+    flex: 1;
+    position: relative;
+}
+.img{
+    object-fit: contain;
+}
+
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+@media (max-width:400px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .boxes{
+        gap: 30px;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }    
+}
